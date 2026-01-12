@@ -1,0 +1,30 @@
+{
+    "packs": [
+        {
+            "name": "kitty",
+            "type": "pacman",
+            "package": "kitty"
+        },
+        {
+            "name": "neovim",
+            "type": "AUR",
+            "package": "neovim-git"
+        },
+        {
+            "name": "lazy vim",
+            "type": "command",
+            "package": [
+                "mv ~/.config/nvim{,.bak}",
+                "git clone https://github.com/LazyVim/starter ~/.config/nvim",
+                "rm -rf ~/.config/nvim/.git"
+            ]
+        }
+    ],
+    "info": {
+        "creator": "Electroman179",
+        "website": {
+            "type": "github",
+            "site": "https://github.com/Eletroman179/"
+        }
+    }
+}
